@@ -1,0 +1,9 @@
+Run make to build the program.  (There is no install target.)  It should be
+relatively painless to cross-compile for your own router using OpenWRT's
+toolchain.
+
+On a DSL line with e.g. 1492-byte MTU, typically web servers reply to requests
+but receive ICMP messages from your ISP's router to retransmit smaller segments.
+This program pre-emptively attempts to inform hosts of your WAN MTU when
+connecting over TCP.  With luck, the server sees these ICMP packets before its
+initial response.
