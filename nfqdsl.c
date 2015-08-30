@@ -28,6 +28,7 @@
 #include <linux/netfilter.h>
 #include <linux/netfilter/nfnetlink.h>
 #include <linux/netfilter/nfnetlink_queue.h>
+#include <time.h>
 #include <errno.h>
 #include <stdlib.h>
 #include <string.h>
