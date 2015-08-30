@@ -12,5 +12,4 @@ for some websites, but not all.
 On Linux, it is possible to configure netfilter with iptables to pass the TCP
 SYN-ACK to nfqdsl.  Then it doesn't need a BPF filter and it can delay relaying
 the SYN-ACK until after the ICMP message gets transmitted.  I don't remember if
-this program worked (I switched from DSL) so it is not included in the
-Makefile.
+this program worked (I switched from DSL).
